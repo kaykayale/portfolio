@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "homepage": "https://kaykayale.github.io/portfolio",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@lottiefiles/react-lottie-player": "^3.5.3",
     "@react-pdf/renderer": "^2.2.0",
