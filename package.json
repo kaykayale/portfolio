@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://kaykayale.com",
+  "homepage": "https://kaykayale.github.io/portfolio",
   "private": false,
   "dependencies": {
     "@lottiefiles/react-lottie-player": "^3.5.3",
