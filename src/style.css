@@ -1,17 +1,32 @@
 html {
   --section-background-color: linear-gradient(
     to bottom left,
-    rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.904)
+    rgb(223 190 221 / 72%),
+    rgb(73 62 71 / 74%)
   );
 
   --image-gradient: linear-gradient(
     to bottom left,
-    rgba(17, 16, 16, 0.678),
-    rgba(12, 10, 22, 0.863)
+    rgba(199, 187, 238, 0.754), rgba(250, 172, 168, 0.754)
+
+
+    /* #ddd6f3, #faaca8 */
+    
+
+    /* rgba(206, 192, 247, 0.754), 
+    rgba(255, 131, 203, 0.704) */
+
+
+
+    /* rgba(252, 119, 186, 0.754), 
+    rgba(255, 238, 252, 0.704) */
+    
+    /* rgba(17, 16, 16, 0.678),
+    rgba(12, 10, 22, 0.863) */
   );
 
-  --imp-text-color: #c770f0;
+  --imp-text-color: rgba(162, 28, 224, 0.863);
+   /* #c770f0; */
 }
 
 .purple {
@@ -155,8 +170,8 @@ button:focus {
 }
 
 .logo {
-  height: 1.4em !important;
-  width: 2.5em !important;
+  height: 3.4em !important;
+  width: 4.0em !important;
 }
 
 .navbar-nav .nav-link {
@@ -212,8 +227,9 @@ button:focus {
   animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
   animation-duration: 2.1s; /* Change to speed up or slow down */
   animation-iteration-count: infinite; /* Never stop waving :) */
-  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  transform-origin: 90% 90%; /* Pivot around the bottom-left palm */
   display: inline-block;
+  font-size: 1.4em !important;
 }
 
 @keyframes wave-animation {
@@ -254,13 +270,26 @@ button:focus {
   padding-top: 80px !important;
 }
 
-.home-section {
+
+.home-container {
   position: relative;
   z-index: -1;
   background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 30px !important;
+  padding-top: 30px !important;
+}
+
+
+.home-section {
+  position: relative;
+  z-index: -1;
+  /* background-image: var(--image-gradient), url(./Assets/home-bg.jpg); */
   background-position: top center;
   background-repeat: no-repeat;
-  padding-bottom: 30px !important;
+  padding-bottom: 10px !important;
   padding-top: 30px !important;
 }
 
@@ -271,27 +300,29 @@ button:focus {
 }
 
 .heading {
-  font-size: 2.4em !important;
+  font-size: 4.4em !important;
   padding-left: 50px !important;
 }
 
 .heading-name {
-  font-size: 2.5em !important;
+  font-size: 3.5em !important;
   padding-left: 45px !important;
 }
 
 .main-name {
-  color: #cd5ff8;
+  color: rgba(244, 243, 245, 0.863); 
+  /* color: rgba(162, 28, 224, 0.863);  */
 }
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color: #be6adf !important;
+  color: rgba(248, 247, 248, 0.863) !important;
+  /* color: #be6adf !important; */
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: #b562d6 !important;
+  color: rgba(162, 28, 224, 0.863) !important;
 }
 
 @media (max-width: 767px) {
@@ -321,6 +352,13 @@ button:focus {
   position: relative;
   padding-bottom: 70px !important;
   padding-top: 70px !important;
+
+  z-index: -2;
+  /* background-image: var(--image-gradient), url(./Assets/home-bg.jpg); */
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 .home-about-description {
